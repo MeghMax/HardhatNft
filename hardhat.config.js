@@ -37,6 +37,13 @@ module.exports = {
             blockConfirmations: 6,
             gas: 600000000,
         },
+        sepolia: {
+            url: process.env.SEPOLIA_RPC_URL,
+            accounts: [`0x${process.env.PRIVATE_KEY}`],
+            chainId: 11155111,
+            blockConfirmations: 6,
+            gas: 600000000,
+        },
     },
     solidity: {
         compilers: [
